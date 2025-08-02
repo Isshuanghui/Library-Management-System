@@ -12,7 +12,6 @@ This system adopts object-oriented design, implementing functions such as book C
     Add new books to the system
     
     View all book information
-    
 ## 👨‍🎓Customer Functions
     View all book information
     
@@ -29,17 +28,17 @@ This system adopts object-oriented design, implementing functions such as book C
     Interaction: Console command-line interface
     
 # Class Structure
-    Core Interfaces: IAdmin (admin permissions), ICustomer (customer permissions)
+Core Interfaces: IAdmin (admin permissions), ICustomer (customer permissions) 
+
+Implementation Classes: AdminImpl (admin function implementation), CustomerImpl (customer function implementation)
     
-    Implementation Classes: AdminImpl (admin function implementation), CustomerImpl (customer function implementation)
+Management Class: BookMgr (core book management class, singleton)
     
-    Management Class: BookMgr (core book management class, singleton)
+Entity Classes: Book (book information), EX (abstract class for complimentary items) and its subclasses CD/Bag/Pen
     
-    Entity Classes: Book (book information), EX (abstract class for complimentary items) and its subclasses CD/Bag/Pen
+Utility Class: EXFactory (factory for creating complimentary items)
     
-    Utility Class: EXFactory (factory for creating complimentary items)
-    
-    Entry Class: MainTest (system startup and interactive interface)
+Entry Class: MainTest (system startup and interactive interface)
     
 # 🪄Quick Start
 1. Clone the repository to your local machine
@@ -59,17 +58,26 @@ This system adopts object-oriented design, implementing functions such as book C
 ## Admin Operations
 ----------------Admin Interface---------------
 1.Stock Books 2.Remove Books 3.Add New Books 4.View Books 0.Exit System
+
 Please select your operation: 4
+
 Current Book Inventory:
+
 ID:1   Title:Core Java  Author:Cay S.Horstmann  Publication Date:1978-03-25  Stock:25  Price:¥50
+
 ID:2   Title:Effective Java  Author:Joshua Bloch  Publication Date:1979-04-26  Stock:30  Price:¥40
 ...
 ## Customer Operations
 ----------------Customer Interface---------------
+
 1.View Books 2.Purchase Books 3.View Complimentary Items 4.Purchase Complimentary Items 0.Exit System
+
 Please select your operation: 2
+
 Please enter book ID to purchase: 1
+
 Please enter quantity: 2
+
 Purchase successful! Total price: ¥100.00
 
 
