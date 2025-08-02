@@ -5,27 +5,27 @@ This system adopts object-oriented design, implementing functions such as book C
 # Core Features
 
 ## 👨‍🏫Admin Functions
-    Stock books (increase inventory of specified books)
+Stock books (increase inventory of specified books)
     
-    Remove books from stock (decrease inventory of specified books)
+Remove books from stock (decrease inventory of specified books)
     
-    Add new books to the system
+Add new books to the system
     
-    View all book information
+View all book information
 ## 👨‍🎓Customer Functions
-    View all book information
+View all book information
     
-    Purchase books (supports quantity selection with automatic total calculation)
+Purchase books (supports quantity selection with automatic total calculation)
     
-    Check available complimentary items (CD, Bag, Pen)
+Check available complimentary items (CD, Bag, Pen)
     
-    Purchase complimentary items (requires prior book purchase)
+Purchase complimentary items (requires prior book purchase)
 # 🛠️Technical Architecture
-    Design Patterns: Singleton Pattern (BookMgr), Factory Pattern (EXFactory), Interface Segregation Principle
+Design Patterns: Singleton Pattern (BookMgr), Factory Pattern (EXFactory), Interface Segregation Principle
     
-    Data Storage: In-memory HashMap for book information (with book ID as key)
+Data Storage: In-memory HashMap for book information (with book ID as key)
     
-    Interaction: Console command-line interface
+Interaction: Console command-line interface
     
 # Class Structure
 Core Interfaces: IAdmin (admin permissions), ICustomer (customer permissions) 
